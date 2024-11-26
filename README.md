@@ -126,26 +126,6 @@ This is a complete application designed to manage and visualize hierarchical dat
 - **Backend**: Node.js, Express, Neo4j
 - **Deployment**: Azure Static Web Apps, GitHub Actions
 
----
-
-## Contributing
-
-We welcome contributions! To contribute:
-
-1. Fork the repository.
-2. Create a new feature branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Commit and push your changes:
-   ```bash
-   git commit -m "Add your commit message"
-   git push origin feature/your-feature-name
-   ```
-4. Submit a pull request.
-
----
-
 ## Future Enhancements
 
 - Add advanced filtering and search capabilities.
