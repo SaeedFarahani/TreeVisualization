@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  neo4j:
+    image: neo4j:5.8
+    container_name: neo4j
+    ports:
+      - "7474:7474"  # HTTP access
+      - "7687:7687"  # Bolt protocol
+    environment:
+      - NEO4J_AUTH=${NEO4J_USERNAME}/${NEO4J_PASSWORD}
+      - NEO4J_dbms_default__database=neo4j
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      - neo4j_import:/var/lib/neo4j/import
+      - neo4j_plugins:/plugins
+
+volumes:
+  neo4j_data:
+  neo4j_logs:
+  neo4j_import:
+  neo4j_plugins:
